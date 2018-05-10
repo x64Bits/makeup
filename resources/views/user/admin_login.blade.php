@@ -39,7 +39,6 @@
 			</div>
 		</div>
 		<div id="logo_foot_container">
-      <div id="contact_admin"></div>
       <a href="https://www.instagram.com/marquezagency/" target="_blank">
 			 <img src="/image/logo_marquez.png" alt="">
       </a>

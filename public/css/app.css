@@ -89,7 +89,6 @@ body{
 .footer {
 	clear: both;
     position: relative;
-    z-index: 10;
     line-height: 120px;
     background-color: #F0F0F0;
     color: #6a6a6a;
@@ -146,6 +145,7 @@ body{
 }
 
 #logo_marquez {
+	z-index: -99;
 	width: 60%;
 }
 
@@ -434,13 +434,13 @@ nav a {
     bottom: 0px;
     position: absolute;
     padding-right: 50px;
-    z-index: -99;
 }
 
 #footer_marquez img {
 	float: right;
 	width: 110px;
 	margin-right: 25px;
+	z-index: -99;
 }
 
 #footer2 {
@@ -705,12 +705,7 @@ nav a {
 }
 
 #login_container_p {
-	background-color: rgba(189, 176, 170, 0.5);
-	background: rgb(189,176,170); /* Old browsers */
-	background: -moz-linear-gradient(-45deg, rgba(189,176,170,1) 0%, rgba(228,209,202,1) 50%, rgba(182,169,163,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(189,176,170,1) 0%,rgba(228,209,202,1) 50%,rgba(182,169,163,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, rgba(189,176,170,1) 0%,rgba(228,209,202,1) 50%,rgba(182,169,163,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdb0aa', endColorstr='#b6a9a3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-color: #D9D9D9;
 	width: 500px;
 	border-radius: 5px;
 	margin: 0 auto;
@@ -723,9 +718,9 @@ nav a {
 	padding-right: 50px;
 	padding-left: 50px;	
 	height: 390px;
-	-webkit-box-shadow: 0px 0px 44px -5px rgba(0,0,0,0.75);
+	/*-webkit-box-shadow: 0px 0px 44px -5px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 44px -5px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 44px -5px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 44px -5px rgba(0,0,0,0.75);*/
 }
 
 #login_container_p img {
@@ -844,10 +839,11 @@ nav a {
 
 #contact_admin {
 	 /* The image used */
-    background-image: url("/image/bg_admin_login.jpeg");
+    background-image: url(/image/footer_contact.png);
     height: 54px;
     width: 100%;
     background-repeat: no-repeat;
     position: absolute;
-
+    bottom: 10px;
+    left: 20px;
 }

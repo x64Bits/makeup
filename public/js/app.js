@@ -144,10 +144,11 @@ $( document ).ready(function() {
                 $('#form_update').trigger('reset');
                 if(data.code == 201) {
                     $('#modal_edit').modal('toggle');
+                    $('#product_id').remove();
                 }
 
                 if(data.hasOwnProperty('errorInfo')) {
-
+                    $('#product_id').remove();
                     if(data.errorInfo[1] == 1062) {
                         $('#modal_create_duplicate').modal('toggle');
                     }else {

@@ -10,7 +10,13 @@ Que puede hacer makeup?
    - Catalogo responsive para visualizar productos
    - Doble sistema de login, interno para las funciones avanzadas y uno externo para que los clientes puedan visualizar el catalogo
 
-# Ultimos cambios 1.0.0:
+# VErsion: 1.0.1:
+
+   - Arreglo en el css referente a footer dentro del panel administrativo, ya que el icono de la agencia no se podia pulsar, en la segunda fase de implementara una mejor posicion al footer haciendo que este se reserve espacio no este flotando.
+   - Se cambio la imagen de contacto en el login publico del catalogo, mas resolucion, de mejor aspecto y png.
+   - Se soluciono un error que habia al momento de editar productos que no se eliminaba el input con el ID al que se hace referencia para identificar el producto al que realizara dicha accion, al momento de que termina la peticion es eliminado el input con el ID para evitar un 'cache' ficticio.
+
+# Version: 1.0.0:
 
    - Adicion de datos de contactos en el login de administracion.
    - Remplazo del filtro que solo permitia numeros en el los input de precios al momento crear o editar productos, ha sido remplazado por un filtro que permite numeros y puntos.

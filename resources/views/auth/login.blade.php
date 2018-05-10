@@ -16,7 +16,7 @@
     <title> MakeUp | Acceder al sistema </title>
   </head>
   <body>
-    <div id="login_bg"></div>
+    {{-- <div id="login_bg"></div> --}}
     @include('partials.modals')
     <div class="container">
         <div class="row">
@@ -38,6 +38,7 @@
         </div>
     </div>
         <div id="logo_foot_container">
+          <div id="contact_admin"></div>
           <a href="https://www.instagram.com/marquezagency/" target="_blank">
             <img src="/image/logo_marquez.png" alt="">
           </a>
