@@ -10,7 +10,14 @@ Que puede hacer makeup?
    - Catalogo responsive para visualizar productos
    - Doble sistema de login, interno para las funciones avanzadas y uno externo para que los clientes puedan visualizar el catalogo
 
-# VErsion: 1.0.1:
+# Version: 2.0.0:
+
+   - El Slider del catalogo es dinamico, desde el panel de control es posible administrar las imagenes que se mostraran en ese componente.
+   - Scroll infinito el la seccion del catalogo de productos.
+   - La vista donde se elegia que tipo de accion se iba a realizar en cuanto al producto se referia ha cambiado, ahora se tiene un menu de dos opciones en las cuales puedes elegir si realizar cambios del slider o de los productos del catalogo.
+   - Se agrego una vista para el cambio de imagenes del slider del catalogo.
+
+# Version: 1.0.1:
 
    - Arreglo en el css referente a footer dentro del panel administrativo, ya que el icono de la agencia no se podia pulsar, en la segunda fase de implementara una mejor posicion al footer haciendo que este se reserve espacio no este flotando.
    - Se cambio la imagen de contacto en el login publico del catalogo, mas resolucion, de mejor aspecto y png.

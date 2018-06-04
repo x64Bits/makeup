@@ -55,6 +55,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="/js/jquery.js"></script>
+    <script src="/js/jquery.jscroll.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/lightbox.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>

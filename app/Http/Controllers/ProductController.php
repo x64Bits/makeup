@@ -21,7 +21,7 @@ class ProductController extends Controller
 
         $products = DB::table('products')
         ->orderBy('id', 'desc')
-        ->paginate(500);
+        ->paginate(8);
 
         return view('product.index', compact('products'));
     }
@@ -151,7 +151,7 @@ class ProductController extends Controller
 
     public function catalogShow()
     {
-    	return view('product.catalog_admin');
+    	return view('panel.options-panel');
     }
 
     public function showDeleteForm()

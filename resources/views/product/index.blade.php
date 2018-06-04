@@ -5,10 +5,10 @@
 	@include('layout.text_slider')
 
 	<div class="container">
-		<div class="row" id="list">
+		<div class="row infinite-scroll" id="list">
 
 			@foreach( $products as $product )
-				<div class="card" >
+				<div class="card">
 					<a href="/product_show/{{ $product->id }}" target="_blank">
 				  		<img class="card-img-top" src="{{ $product->image_path }}" alt="Image">
 				    </a>

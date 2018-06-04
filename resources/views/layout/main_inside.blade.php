@@ -26,8 +26,8 @@
     @include('layout.nav_inside')
 
     {{-- Logica de la Flecha Superior Izquierda --}}
-    @if( Route::currentRouteName() != 'catalog' )
-      <a id="back_arrow" href="{{ url('product/catalog') }}">
+    @if( Route::currentRouteName() != 'panel-admin' )
+      <a id="back_arrow" href="{{ route('panel-admin') }}">
         <i class="fas fa-arrow-left"></i>
       </a>
     @endif

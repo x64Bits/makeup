@@ -38,7 +38,7 @@ Route::middleware('auth')->group(function () {
 
 	Route::resource('products', 'ProductController');
 
-	Route::get('/product/catalog', 'ProductController@catalogShow')->name('catalog');
+	Route::get('/panel/admin', 'ProductController@catalogShow')->name('panel-admin');
 
 	Route::get('/product/delete', 'ProductController@showDeleteForm');
 
@@ -47,5 +47,8 @@ Route::middleware('auth')->group(function () {
 	Route::get('/product/delete_show/{product_code}', 'ProductController@showByCode');
 	
 	Route::get('/product/edit_show/{product_code}', 'ProductController@showByCode');
-
 });
+
+Route::resource('slider', 'SliderImageController');
+
+Route::get('slider/{id}/delete', 'SliderImageController@destroy')->name('slider.destroy');
