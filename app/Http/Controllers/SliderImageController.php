@@ -60,9 +60,11 @@ class SliderImageController extends Controller
            return dump($e);
         }
 
-        $message = Session::flash('message', 'Imagen Agregada con exito');
+        Session::flash('message', 'Imagen Agregada con exito');
+
+        Session::flash('type', 'success');
         
-        return redirect()->route('slider.create')->with($message);
+        return redirect()->route('slider.create');
     }
 
     /**

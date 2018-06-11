@@ -6,7 +6,9 @@
 		<div class="row" id="slider-form-row">
 			<div class="col-md-10">
 				@if(Session::has('message'))
-					<h2>{{Session::get('message')}}</h2>
+					<script>
+						toastr.success('Excelente', 'La imagen ha sido cargada con exito')
+					</script>
 				@endif
 				<form action="{{ route('slider.store') }}" id="slider-file-form" method="POST" enctype="multipart/form-data">
 					<div class="form-group">
