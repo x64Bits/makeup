@@ -18,7 +18,7 @@ class SliderImageController extends Controller
      */
     public function index()
     {
-        return 'hola';
+        //
     }
 
     /**
@@ -47,7 +47,7 @@ class SliderImageController extends Controller
         if($req->hasFile('slider_image'))
         {
             $image->path = $req->file('slider_image')->store(
-                '/public/uploads/slider',
+                'uploads/slider',
                 'public_uploads'
             );
             $image->name = $req->file('slider_image')->getClientOriginalName();

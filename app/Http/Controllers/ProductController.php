@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product; 
+use App\SliderImage;
 use Response;
 use Exception;
 use DB;
@@ -20,10 +21,13 @@ class ProductController extends Controller
         //$products = Product::paginate(20);
 
         $products = DB::table('products')
-        ->orderBy('id', 'desc')
-        ->paginate(8);
+            ->orderBy('id', 'desc')
+            ->paginate(8);
 
-        return view('product.index', compact('products'));
+        $slider_images = SliderImage::orderBy('position', 'asc')
+            ->get();
+
+        return view('product.index', compact('products', 'slider_images'));
     }
 
     /**

@@ -24,6 +24,6 @@ class HomeController extends Controller
     public function index()
     {
         //return view('product.catalog_admin');
-        return redirect()->route('catalog');
+        return redirect()->route('panel-admin');
     }
 }

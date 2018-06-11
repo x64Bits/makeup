@@ -936,6 +936,16 @@ nav a {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 70px;
+	transition: 1s;
+	cursor: pointer;
+	
+}
+
+#slider-file-label:hover {
+	transition: 0.7s;
+	-webkit-box-shadow: 0px 6px 13px -1px rgba(0,0,0,0.42);
+	-moz-box-shadow: 0px 6px 13px -1px rgba(0,0,0,0.42);
+	box-shadow: 0px 6px 13px -1px rgba(0,0,0,0.42);
 }
 
 #slider-file-form {
@@ -957,6 +967,12 @@ nav a {
 	right: 6%;
 	position: absolute; 
 	z-index: 9;
+	transition: 0.7s;
+}
+
+#slider-file-btn-add:hover {
+	background-color: #bb0b59;
+	transition: 0.7s;
 }
 
 #slider-file-btn-add:focus {

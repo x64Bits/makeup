@@ -1,3 +1,10 @@
+# Version: 2.1.1:
+
+   - Correccion de bug al subir imagenes del slider.
+   - Correccion de la ruta 'admin'.
+   - Slider del inicio vinculado a la base datos.
+   - Advertencia el la seccion de subir imagenes al slider sobre las dimenciones apropiadas que debe de tener.
+
 # Version: 2.0.0:
 
    - El Slider del catalogo es dinamico, desde el panel de control es posible administrar las imagenes que se mostraran en ese componente.
