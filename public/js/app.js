@@ -8,7 +8,7 @@ $( document ).ready(function() {
         event.preventDefault();
 
         // Get form
-        var form = $('#form_create')[0];
+        var form = $('#form_crud')[0];
 
 		// Create an FormData object 
         var data = new FormData(form);
@@ -25,13 +25,17 @@ $( document ).ready(function() {
             success: function (data) {
                 console.log("SUCCESS : ", data);
                 $("#btn_create_product").prop("disabled", false);
-                $('#form_create').trigger('reset');
+                $('#form_crud').trigger('reset');
                 if(data.code == 201) {
-                	$('#modal_create').modal('toggle');
+                    $('#modal_create').modal('toggle');
+                    $('#file_label').css('background-size', 'auto');
+                    $('#file_label').css('background-image', 'url(/image/icon_add.png)');
                 }
 
                 if(data.hasOwnProperty('errorInfo')) {
 
+                    $('#file_label').css('background-size', 'auto');
+                    $('#file_label').css('background-image', 'url(/image/icon_add.png)');
                     if(data.errorInfo[1] == 1062) {
                         $('#modal_create_duplicate').modal('toggle');
                     }else {
@@ -75,8 +79,9 @@ $( document ).ready(function() {
     });
 
     /*Funcion que desencadena la eliminacion el Producto*/
-    $('#delete_btn').click(function(){
+    $('#btn_delete_product').click(function(){
         var product_id = $('#product_id').val();
+        $('#form_crud').append('<input id="method-input" name="_method" type="hidden" value="DELETE">');
         $.ajax({
             url: '/products/'+product_id,
             type: 'post',
@@ -84,10 +89,13 @@ $( document ).ready(function() {
             success: function(result) {
                 $('#modal_delete').modal('toggle');
                 $('#product_id').remove();
+                $('#method-input').remove();
                 $('#form_create').trigger('reset');
+                $('#file_label').css('background-image', 'url(/image/icon_add.png)');
             },
             error: function ( e ) {
                 alert('error: ' + e)
+                $('#file_label').css('background-image', 'url(/image/icon_add.png)');
             }
         });
     });
@@ -105,9 +113,9 @@ $( document ).ready(function() {
                 $('#input_name').val(result.name);
                 $('#input_brand').val(result.brand);
                 $('#input_price').val(result.price);
-                //$('#file_label').css('background-image');
-                //$('#image_path').css('padding')
-                $('#form_update').append('<input id="product_id" type="text" hidden="hidden" value="'+result.id+'">');
+                $('#file_label').css('background-image', 'url("/'+result.image_path+'")');
+                $('#file_label').css('background-size', 'contain');
+                $('#form_crud').append('<input id="product_id" type="text" hidden="hidden" value="'+result.id+'">');
             }
            
         });   
@@ -121,15 +129,22 @@ $( document ).ready(function() {
         //stop submit the form, we will post it manually.
         event.preventDefault();
 
+        $('#form_crud').append('<input name="_method" type="hidden" value="PUT">');
+
         // Get form
-        var form = $('#form_update')[0];
+        var form = $('#form_crud')[0];
 
         // Create an FormData object 
         var data = new FormData(form);
 
+        console.log(data)
+
         var product_id = $('#product_id').val();
 
         $.ajax({
+            // Se envia en metodo POST pero en el form
+            // va el input PUT para indicar que va hacia el update,
+            // si se especifica el metodo aca no funciona.
             type: "POST",
             enctype: 'multipart/form-data',
             url: "/products/"+product_id,
@@ -141,14 +156,20 @@ $( document ).ready(function() {
             success: function (data) {
                 console.log("SUCCESS : ", data);
                 $("#btn_edit_product").prop("disabled", false);
-                $('#form_update').trigger('reset');
+                $('#form_crud').trigger('reset');
                 if(data.code == 201) {
                     $('#modal_edit').modal('toggle');
                     $('#product_id').remove();
+                    $('#method-input').remove();
+                    $('#file_label').css('background-size', 'auto');
+                    $('#file_label').css('background-image', 'url(/image/icon_add.png)');
                 }
 
                 if(data.hasOwnProperty('errorInfo')) {
                     $('#product_id').remove();
+                    $('#method-input').remove();
+                    $('#file_label').css('background-size', 'auto');
+                    $('#file_label').css('background-image', 'url(/image/icon_add.png)');
                     if(data.errorInfo[1] == 1062) {
                         $('#modal_create_duplicate').modal('toggle');
                     }else {
@@ -182,16 +203,6 @@ $( document ).ready(function() {
     $('back_arrow').click(function(){
         $(".holder").fadeIn(100); 
     });
-    $('.decimal').keyup(function(){
-        var val = $(this).val();
-        if(isNaN(val)){
-             val = val.replace(/[^0-9\.]/g,'');
-             if(val.split('.').length>2) 
-                 val =val.replace(/\.+$/,"");
-        }
-        $(this).val(val); 
-    })
-
 });
 
 $(document).ready(function() {

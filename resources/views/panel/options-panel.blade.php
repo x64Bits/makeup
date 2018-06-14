@@ -14,7 +14,7 @@
 				</a>	
 			</div>
 			<div class="col-md-6">
-				<a href="#">
+				<a href="{{ route('admin-product') }}">
 					<div class="big-btn-admin" id="bigbtn-admin-catalog">
 						<h3>ADMINISTRAR CATALOGO</h3>
 					</div>

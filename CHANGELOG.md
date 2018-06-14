@@ -3,7 +3,7 @@
    - Correccion de bug al subir imagenes del slider.
    - Correccion de la ruta 'admin'.
    - Slider del inicio vinculado a la base datos.
-   - Advertencia el la seccion de subir imagenes al slider sobre las dimenciones apropiadas que debe de tener.
+   - Advertencia el la seccion de subir imagenes al slider sobre las dimensiones apropiadas que debe de tener.
 
 # Version: 2.0.0:
 

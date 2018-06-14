@@ -16,6 +16,11 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function crudProduct()
+    {
+        return view('product.crud_product');
+    }
     public function index()
     {
         //$products = Product::paginate(20);
@@ -135,7 +140,7 @@ class ProductController extends Controller
 
         $product->update($request->except('image_path'));
 
-        return Response::json(['code' => 201, 'msg' => 'Producto editado con exito']);
+        return Response::json(['code' => 201, 'msg' => 'Producto editado con exito', $request->all()]);
     }
 
     /**

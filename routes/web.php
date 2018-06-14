@@ -19,6 +19,8 @@ Route::get('admin', function(){
 	return redirect()->route('login');
 });
 
+Route::get('/panel/admin/product', 'ProductController@crudProduct')->name('admin-product');
+
 Route::post('search', 'ProductController@searchProduct')->name('search');
 
 Route::get('product_show/{id}', 'ProductController@show');
