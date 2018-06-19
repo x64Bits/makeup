@@ -1,3 +1,17 @@
+# Version: 2.3.1
+
+   - Ajuste de las imagenes de cada producto en el index del catalogo.
+   - Agregado boton de toggle action para visualizar botones de la barra de navegacion.
+   - Responsive de el index del catalogo para poder tener 4 columnas de items.
+   - Ajuste de las imagenes respetando la relacion de aspecto por sobre el tamaño del objeto padre.
+   - Responsive agregado para la mayoria de los tamaños de display.
+   - Se corriguieron varias rutinas Javascript para mejorar la velocidad de ejecucion de las llamadas AJAX.
+
+# Version: 2.2.0:
+
+   - CRUD de productos unificados en una sola seccion.
+   - Se redujo el Scrip de AJAX a una sola peticion para traer la informacion del proyecto.
+   - Correcion de la ruta correcta de las imagenes de cada producto en el index del catalogo.
 # Version: 2.1.1:
 
    - Correccion de bug al subir imagenes del slider.

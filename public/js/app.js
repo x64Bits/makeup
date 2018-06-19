@@ -244,3 +244,9 @@ $("#image_path").change(function(){
             });
             $('.jscroll-inner').css('display', 'contents')
         });*/
+
+
+$('#toggle_right_items').click(function(){
+    $('#right_items').toggleClass('right_items_toggle_class')
+    $('#form_search').toggleClass('right_items_toggle_class')
+})

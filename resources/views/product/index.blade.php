@@ -9,8 +9,8 @@
 
 			@foreach( $products as $product )
 				<div class="card">
-					<a href="/product_show/{{ $product->id }}" target="_blank">
-				  		<img class="card-img-top" src="{{ $product->image_path }}" alt="Image">
+					<a class="card-content-img" href="/product_show/{{ $product->id }}" target="_blank">
+				  		<img class="card-img-top" src="/{{ $product->image_path }}" alt="Image">
 				    </a>
 				  <div class="card-body">
 				  	<h6>{{ $product->name }} - {{ $product->code }}</h6>

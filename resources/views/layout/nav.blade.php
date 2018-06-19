@@ -22,4 +22,5 @@
 			</div>
 		</a>		
 	</div>
+	<i class="fas fa-bars" id="toggle_right_items"></i>
 </nav>
