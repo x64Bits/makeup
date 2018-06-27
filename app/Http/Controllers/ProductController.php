@@ -27,12 +27,12 @@ class ProductController extends Controller
 
         $products = DB::table('products')
             ->orderBy('id', 'desc')
-            ->paginate(8);
+            ->paginate(20);
 
         $slider_images = SliderImage::orderBy('position', 'asc')
             ->get();
 
-        return view('product.index', compact('products', 'slider_images'));
+        return view('catalog.product_index', compact('products', 'slider_images'));
     }
 
     /**
@@ -172,11 +172,17 @@ class ProductController extends Controller
     {
         $products = DB::table('products')->where('category', $category)->paginate(15);
 
-        return view('product.index', compact('products'));
+        $slider_images = SliderImage::orderBy('position', 'asc')
+            ->get();
+
+        return view('catalog.template', compact('products', 'slider_images'));
     }
 
     public function searchProduct(Request $request)
     {
+
+        $slider_images = SliderImage::orderBy('position', 'asc')
+            ->get();
 
          if (!is_null($request->search)) {
 
@@ -189,17 +195,17 @@ class ProductController extends Controller
                     'msg' => 'Su busqueda no ha dado resultados...'
                 ];
 
-                return view('product.results', compact('results'));
+                return view('catalog.search', compact('results', 'slider_images'));
             }
 
-            return view('product.results', compact('results'));
+            return view('catalog.search', compact('results', 'slider_images'));
         }else {
             $results = [
                 'code' => 404,
                 'msg' => 'Debe colocar un termino para realizar una busqueda'
             ];
 
-            return view('product.results', compact('results'));
+            return view('catalog.search', compact('results', 'slider_images'));
         }
         
     }
