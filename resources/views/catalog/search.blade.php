@@ -6,7 +6,7 @@
 	    @foreach ( $results as $result )
 	        <div class="pure-u-1-4">
 	            <div class="l-box product_card">
-	                <a href="/product_show/{{ $product->id }}" class="product_container">
+	                <a href="/product_show/{{ $result->id }}" class="product_container">
 	                	<div class="image_container">
 	                    	<img src="/{{$result->image_path}}">
 	                	</div>

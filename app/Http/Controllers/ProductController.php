@@ -175,7 +175,7 @@ class ProductController extends Controller
         $slider_images = SliderImage::orderBy('position', 'asc')
             ->get();
 
-        return view('catalog.template', compact('products', 'slider_images'));
+        return view('catalog.product_index', compact('products', 'slider_images'));
     }
 
     public function searchProduct(Request $request)
