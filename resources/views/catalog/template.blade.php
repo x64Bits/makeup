@@ -26,7 +26,7 @@
     <!-- NAVBAR -->
     <div class="pure-menu pure-menu-horizontal navbar">
         <a href="{{ route('public_catalog') }}" class="pure-menu-heading">
-            <img class="logo_brand" src="http://www.makeupvzla.tk/image/logo.png" alt="">
+            <img class="logo_brand" src="image/logo.png" alt="">
         </a>
         <ul class="pure-menu-list right_objects">
 
