@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="/css/fontawesome-all.min.css">
-    {{-- LighBox --}}
-    <link rel="stylesheet" href="/css/lightbox.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/app.min.css">
 
