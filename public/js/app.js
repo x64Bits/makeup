@@ -220,7 +220,6 @@ function readURL(input, target) {
         
         reader.readAsDataURL(input.files[0]);
     }
-    //console.log('hola')
 }
 
 // Al cambiar el #image_path se llama la funcion

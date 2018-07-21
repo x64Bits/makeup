@@ -12,7 +12,7 @@
     {{-- LighBox --}}
     <link rel="stylesheet" href="/css/lightbox.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app.min.css">
 
     {{-- Toastr CSS --}}
     <link rel="stylesheet" href="/css/toastr.min.css">
@@ -51,7 +51,7 @@
     <script src="/js/jquery.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/lightbox.min.js"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.min.js') }}"></script>
     <script src="/js/toastr.min.js"></script>
     @include('partials.toastr_messages')
   </body>
