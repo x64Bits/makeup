@@ -234,24 +234,6 @@ $("#slider-file-input").change(function(){
     $('#slider-file-label').css('background-size', 'cover')
 })
 
-/*$('ul.pagination').hide();
-        $(function() {
-            $('.card').fadeIn(900)
-            $('.infinite-scroll').jscroll({
-                debug: true,
-                autoTrigger: true,
-                loadingHtml: '<img src="https://cdn.dribbble.com/users/69182/screenshots/2179253/animated_loading__by__amiri.gif" alt="Cargando..." />',
-                padding: 900,
-                nextSelector: '.pagination li.active + li a',
-                contentSelector: 'div.infinite-scroll',
-                callback: function() {
-                    $('ul.pagination').remove();
-                    $('.jscroll-added .card').fadeIn(1500)
-                }
-            });
-            $('.jscroll-inner').css('display', 'contents')
-        });*/
-
 
 $('#toggle_right_items').click(function(){
     $('#right_items').toggleClass('right_items_toggle_class')

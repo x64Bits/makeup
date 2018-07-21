@@ -1,3 +1,7 @@
+## Version: 2.5.3 
+  - Se ha añadido el **preview** de imagenes para el slider de imagenes, en el proceso se ha optimizado el javascript.
+  - Se han añadido los archivos minificados de **app.css** y **app.js** para hacer que el proceso de carga se mas rapido.
+  - Se ha eliminado **lightbox** como dependencia para abrir las imagenes es una modal ya que no se estaba usando.
 ## Version: 2.5.0
   - Se centro el buscador del navbar y se ajusto el responsive para que no tuviera conflictos con el logo.
   - Las flechas direccionales del slider de imagenes se les ha cambiado el color a **blanco**.
