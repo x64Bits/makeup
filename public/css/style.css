@@ -8,6 +8,7 @@
 }
 
 .product_container .image_container {
+	overflow: hidden;
 	display: block;
 	position: relative;
 	width: 70%;
@@ -283,6 +284,10 @@
 #footer_mail {
 	margin-left: 20px;
 	margin-bottom: 25px;
+}
+
+#footer_mail a {
+	text-decoration: none;
 }
 
 #footer_mail_info {
@@ -571,7 +576,7 @@ small {
 	}
 
 	.slider_button {
-		display: none;
+		display: none !important;
 	}
 }
 
@@ -623,6 +628,10 @@ small {
 	}
 }
 @media ( max-width: 320px ) {
+
+	/* .slider_text_content {
+		width: 283px;
+	} */
 
 	#footer_info_right {
 		width: 230px;
