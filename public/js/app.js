@@ -209,23 +209,31 @@ $(document).ready(function() {
     $(".holder").fadeOut(400);
 });
 
-
-function readURL(input) {
+// Funcion para cambiar la imagen
+// que se va a subir en la seccion de crear productos
+function readURL(input, target) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
-
         reader.onload = function (e) {
-            $('#file_label').css('background-image', 'url('+ e.target.result +')');
+            $(target).css('background-image', 'url('+ e.target.result +')');
         }
-
+        
         reader.readAsDataURL(input.files[0]);
     }
+    //console.log('hola')
 }
 
+// Al cambiar el #image_path se llama la funcion
+// readURL pasandole el target y la imagen 
 $("#image_path").change(function(){
-    readURL(this);
+    readURL(this, '#file_label');
     $('#file_label').css('background-size', 'cover');
 })   
+
+$("#slider-file-input").change(function(){
+    readURL(this, '#slider-file-label')
+    $('#slider-file-label').css('background-size', 'cover')
+})
 
 /*$('ul.pagination').hide();
         $(function() {
