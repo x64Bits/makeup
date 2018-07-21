@@ -7,10 +7,14 @@
             <div class="l-box product_card">
                 <a target="_blank" href="/product_show/{{ $product->id }}" class="product_container">
                     <div class="image_container">
-                        <img src="/{{$product->image_path}}">
+                        <img src="/{{ $product->image_path }}">
                     </div>
-                    <h5>{{$product->name}} - {{$product->code}}</h5>
-                    <p>{{$product->price}}COP</p>
+                    <h5>
+                        {{ str_limit($product->name, 25)}} 
+                        - 
+                        {{ $product->code }}
+                    </h5>
+                    <p>{{ $product->price }}COP</p>
                 </a>
              </div>
         </div>

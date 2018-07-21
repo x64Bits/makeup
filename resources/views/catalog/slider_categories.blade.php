@@ -13,9 +13,6 @@
         <a href="/product/category/BROCHA">
             <div class="pure-u-1-5 slider_text_item">BROCHA</div>
         </a>
-        <a href="/product/category/BRONCEADOR">
-            <div class="pure-u-1-5 slider_text_item">BRONCEADOR</div>
-        </a>
     </div>
     <div class="pure-u-1 slider_text_content">
         <a href="/product/category/CERA">
@@ -29,9 +26,6 @@
         </a>
         <a href="/product/category/DELINEADOR">
             <div class="pure-u-1-5 slider_text_item">DELINEADOR</div>
-        </a>
-        <a href="/product/category/DESMAQUILLANTE">
-            <div class="pure-u-1-5 slider_text_item">DESMAQUILLANTE</div>
         </a>
     </div>
     <div class="pure-u-1 slider_text_content">
@@ -47,9 +41,6 @@
         <a href="/product/category/FIJADOR">
             <div class="pure-u-1-5 slider_text_item">FIJADOR</div>
         </a>
-        <a href="/product/category/GEL">
-            <div class="pure-u-1-5 slider_text_item">GEL</div>
-        </a>
     </div>
     <div class="pure-u-1 slider_text_content">
         <a href="/product/category/ILUMINADOR">
@@ -63,9 +54,6 @@
         </a>
         <a href="/product/category/LAPIZ">
             <div class="pure-u-1-5 slider_text_item">LÁPIZ</div>
-        </a>
-        <a href="/product/category/POLVO">
-            <div class="pure-u-1-5 slider_text_item">POLVO</div>
         </a>
     </div>
     <div class="pure-u-1 slider_text_content">
@@ -81,9 +69,6 @@
         <a href="/product/category/MASCARILLA">
             <div class="pure-u-1-5 slider_text_item">MASCARILLA</div>
         </a>
-        <a href="/product/category/PEGA">
-            <div class="pure-u-1-5 slider_text_item">PEGA</div>
-        </a>
     </div>
     <div class="pure-u-1 slider_text_content">
         <a href="/product/category/PESTAÑA">
@@ -97,9 +82,6 @@
         </a>
         <a href="/product/category/PORTA">
             <div class="pure-u-1-5 slider_text_item">PORTA</div>
-        </a>
-        <a href="/product/category/PRIMER">
-            <div class="pure-u-1-5 slider_text_item">PRIMER</div>
         </a>
     </div>
     <div class="pure-u-1 slider_text_content">
@@ -115,9 +97,6 @@
         <a href="/product/category/RUBOR">
             <div class="pure-u-1-5 slider_text_item">RUBOR</div>
         </a>
-        <a href="/product/category/SACAPUNTAS">
-            <div class="pure-u-1-5 slider_text_item">SACAPUNTAS</div>
-        </a>
     </div>
     <div class="pure-u-1 slider_text_content">
         <a href="/product/category/TOALLA">
@@ -125,6 +104,31 @@
         </a>
         <a href="/product/category/VASELINA">
             <div class="pure-u-1-5 slider_text_item">VASELINA</div>
+        </a>
+        <a href="/product/category/BRONCEADOR">
+            <div class="pure-u-1-5 slider_text_item">BRONCEADOR</div>
+        </a>
+        <a href="/product/category/DESMAQUILLANTE">
+            <div class="pure-u-1-5 slider_text_item">DESMAQUILLANTE</div>
+        </a>
+    </div>
+    <div class="pure-u-1 slider_text_content">
+        <a href="/product/category/GEL">
+            <div class="pure-u-1-5 slider_text_item">GEL</div>
+        </a>
+        <a href="/product/category/POLVO">
+            <div class="pure-u-1-5 slider_text_item">POLVO</div>
+        </a>
+        <a href="/product/category/PEGA">
+            <div class="pure-u-1-5 slider_text_item">PEGA</div>
+        </a>
+        <a href="/product/category/PRIMER">
+            <div class="pure-u-1-5 slider_text_item">PRIMER</div>
+        </a>
+    </div>
+    <div class="pure-u-1 slider_text_content">
+        <a href="/product/category/SACAPUNTAS">
+            <div class="pure-u-1-5 slider_text_item">SACAPUNTAS</div>
         </a>
     </div>
 

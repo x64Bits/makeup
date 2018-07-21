@@ -1,3 +1,28 @@
+## Version: 2.5.0
+  - Se centro el buscador del navbar y se ajusto el responsive para que no tuviera conflictos con el logo.
+  - Las flechas direccionales del slider de imagenes se les ha cambiado el color a **blanco**.
+  - El slider de categorias ahora tiene **4** categorias por cada seccion.
+  - Se ha removido una franja gris que se hacia al rededor del contenedor del producto cuando se cargaba la pagina en ciertas resoluciones, **movil** frecuentemente.
+  - Se ha añadido un efecto hover a cada categoria en el slider de categorias.
+  - Se ha limitado la cantidad de letras en el titulo del producto a **25**.
+  - Se cambio la forma en que se media el tamaño del objeto que tiene un mensaje el footer, era basado en porcentajes ahora es medido en pixeles para que no se distorcione en altas resoluciones.
+  - Se han añadido los enlaces de las redes sociales y la accion para enviar un correo en la seccion de contacto.
+
+## Version: 2.4.0
+  - Hacia el catalogo ahora se carga la informacion de los productos y de el slider, antes solo se pedian los productos.
+  - Cuando se listan productos por categorias tambien se carga la informacion sobre las imagenes que van en el slider.
+  - Cuando se realizan busquedas de productos tambien se carga la informacion sobre las imagenes que van en el slider.
+  - Se ha cambiado el slider de bootstrap por Slick un slider de secciones sencillo y ultra rapido.
+  - Se han añadido las notificaciones con Toastr para el slider de imagenes al cargar las imagenes.
+  - Ahora se utilizan iconos de Font-Awesome que son de carga ultra rapida para el navbar.
+  - Se rehizo todo el codigo Javascript con jQuery y se agilizaron varias rutinas del mismo codigo :) .
+  - Se rehizo completamente componente del producto y se mejoro mucho sobre el codigo anterior, motivo de adaptarse a los nuevos cambios.
+  - El componente de la busqueda tambien fue rehecho desde cero para adaptarse a los nuevos cambios.
+  - El Slider principal de imagenes fue rehecho completamente para adaptarse al nuevo framework de grillas y a la libreria Slick.
+  - El slider de Categorias fue Rehecho completamente para adaptarse al nuevo framework.
+  - El catalogo fue Rehecho con PureCSS, una libreria minimalista que permite usar medidas no convencionales y asi lograr estilos mas precisos.
+  - Bootstrap ha desaparecido del catalogo, pero aun se usa en todas las demas secciones del proyecto.
+
 ## Version: 2.3.1
   - Responsive del Login Publico.
 

@@ -18,15 +18,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <!-- Custom Styles -->
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/style.min.css">
 
 	<title>MakeUp | @yield('title')</title>
 </head>
-<body>
+<body> 
     <!-- NAVBAR -->
     <div class="pure-menu pure-menu-horizontal navbar">
         <a href="{{ route('public_catalog') }}" class="pure-menu-heading">
-            <img class="logo_brand" src="image/logo.png" alt="">
+            <img class="logo_brand" src="/image/logo.png" alt="">
         </a>
         <ul class="pure-menu-list right_objects">
 
@@ -70,7 +70,9 @@
         <div class="pure-u-1-2 contact_container">
             <h3 id="footer_title">CONTACTO</h3>
             <div id="footer_mail">
-                <img src="/img/icon_mail.png">
+                <a href="mailto:herneyena001@gmail.com?Subject=Hola%20Estoy%20Interez@%20en%20sus%20productos">
+                    <img src="/img/icon_mail.png">
+                </a>
                 <small id="footer_mail_info">herneyena001@gmail.com</small>
             </div>
             <div id="whats_and_social">
@@ -79,9 +81,13 @@
                     <b>Whatsapp</b>
                     <small>+58 424 266 0629</small>
                 </div>
-                <div id="footer_social">                
+                <div id="footer_social">   
+                <a href="https://www.facebook.com/makeupvzlaedition">
                     <img src="/img/icon_facebook.png">
+                </a> 
+                <a href="https://www.instagram.com/makeupvzlaedition/">
                     <img src="/img/icon_instagram.png">
+                </a>            
                     <b>Redes Sociales</b>
                     <small>@Makeupvzlaedition</small>
                     <small>fb.com/jhoanherney</small>
